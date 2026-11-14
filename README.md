@@ -4,7 +4,7 @@
 <p align="center">Works on: Desktop, Mobile and Web</p>
 <p align="center">
         <img src="https://github.com/appsinacup/godot-rapier-physics/actions/workflows/runner.yml/badge.svg?branch=main"
-            alt="Godot Rapier Build"></a>
+            alt="SadSha Rapier Physics Build"></a>
         <img src="https://img.shields.io/badge/Godot-4.7-%23478cbf?logo=godot-engine&logoColor=white" />
 </p>
 
@@ -26,7 +26,7 @@ with better <b>stability</b>, <b>performance</b>, <b>liquids</b>, <b>determinism
 
 -----
 
-Godot Rapier Physics is a **2D and 3D** physics drop-in replacement for the [Godot game engine](https://github.com/godotengine/godot) through [rapier](https://github.com/dimforge/rapier) physics engine [salva](https://github.com/dimforge/salva) fluids simulation library.
+SadSha Rapier Physics is a **2D and 3D** physics drop-in replacement for the [Godot game engine](https://github.com/godotengine/godot) through [rapier](https://github.com/dimforge/rapier) physics engine [salva](https://github.com/dimforge/salva) fluids simulation library.
 
 
 # Features
@@ -91,7 +91,7 @@ SIMD and cross-platform determinism are not features you opt into: SIMD is alway
 
 For web/Emscripten builds, add one web feature: `experimental-wasm` for threaded web builds, or `experimental-wasm-nothreads` for no-thread web builds. `experimental-wasm-nothreads` includes `experimental-wasm`. CI builds web with `wasm32-unknown-emscripten`, `release-wasm`, and `-Zbuild-std`.
 
-When depending on another GDExtension crate, set `GDRUST_MAIN_EXTENSION` to your extension's `ExtensionLibrary` type and explicitly forward Godot Rapier's init stages from your extension. Godot only runs one main `ExtensionLibrary`, so the user's extension must register the Rapier server and classes too:
+When depending on another GDExtension crate, set `GDRUST_MAIN_EXTENSION` to your extension's `ExtensionLibrary` type and explicitly forward SadSha Rapier Physics's init stages from your extension. Godot only runs one main `ExtensionLibrary`, so the user's extension must register the Rapier server and classes too:
 
 ```rust
 use godot::prelude::*;
@@ -117,7 +117,7 @@ unsafe impl ExtensionLibrary for MyExtension {
 
 For 2D projects, use `RapierPhysics2DExtensionLibrary`.
 
-Do not load the standalone Godot Rapier addon in the same Godot project when bundling it through another Rust GDExtension, because Godot classes can be registered twice.
+Do not load the standalone SadSha Rapier Physics addon in the same Godot project when bundling it through another Rust GDExtension, because Godot classes can be registered twice.
 
 # Youtube Videos
 
@@ -142,8 +142,8 @@ The 2D part is pretty stable, though there are some issues, the 3D part is still
 # Module build
 
 In order to build it as a module, go to:
-- [Godot Rapier Physics Module 2D](https://github.com/appsinacup/godot-rapier-physics-module-2d)
-- [Godot Rapier Physics Module 3D](https://github.com/appsinacup/godot-rapier-physics-module-3d)
+- [SadSha Rapier Physics Module 2D](https://github.com/appsinacup/godot-rapier-physics-module-2d)
+- [SadSha Rapier Physics Module 3D](https://github.com/appsinacup/godot-rapier-physics-module-3d)
 
 # Balaur Engine
 
@@ -151,7 +151,7 @@ The authors of this addon are also building [**Balaur**](https://balaurengine.or
 
 Rapier is its physics too, stepped on a fixed 60 Hz tick, but the determinism covers the whole engine rather than just the physics server: same inputs, same bits on every platform, with a digest per tick, record and replay, and rollback. Scripts are written in [Rune](https://rune-rs.github.io) and hot reload in milliseconds with the state intact.
 
-It is at `0.1` and builds from source for now. Godot Rapier Physics is a separate project and is still maintained.
+It is at `0.1` and builds from source for now. SadSha Rapier Physics is a separate project and is still maintained.
 
 ## AI Usage
 

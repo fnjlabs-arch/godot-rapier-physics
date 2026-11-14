@@ -14,7 +14,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Godot Rapier 2D"
+config/name="SadSha Rapier Physics 2D"
 run/main_scene="uid://1nt5tp5x31sh"
 config/features=PackedStringArray("4.7")
 run/low_processor_mode_sleep_usec=1
@@ -32,7 +32,7 @@ window/subwindows/embed_subwindows=false
 
 [dotnet]
 
-project/assembly_name="Godot Rapier 2D"
+project/assembly_name="SadSha Rapier Physics 2D"
 
 [editor]
 

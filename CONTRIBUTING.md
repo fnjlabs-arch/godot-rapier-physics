@@ -32,7 +32,7 @@ _body_create()
 
 Godot can register multiple `Physics Servers`, and can decide at runtime which one to use.
 
-Godot Rapier Physics implements these under the name like this:
+SadSha Rapier Physics implements these under the name like this:
 - [RapierPhysicsServer2D](src/servers/rapier_physics_server_2d.rs) and [RapierPhysicsServer3D](src/servers/rapier_physics_server_3d.rs)
 - [RapierDirectBodyState2D](src/bodies/rapier_direct_body_state_2d.rs) and [RapierDirectBodyState3D](src/bodies/rapier_direct_body_state_3d.rs)
 - [RapierDirectSpaceState2D](src/spaces/rapier_direct_space_state_2d.rs) and [RapierDirectSpaceState3D](src/spaces/rapier_direct_space_state_3d.rs)
@@ -82,7 +82,7 @@ As such, when saving and loading, first one must recreate the Godot scene and ma
 
 ## Rapier Physics Server Fluids
 
-Godot Rapier Physics also exposes new nodes, [Fluid2D](src/fluids/fluid_2d.rs) and [Fluid3D](src/fluids/fluid_3d.rs). These nodes can set and get position, velocity and acceleration of particles used for fluid simulation. Internally it uses [salva](https://github.com/dimforge/salva) to create them.
+SadSha Rapier Physics also exposes new nodes, [Fluid2D](src/fluids/fluid_2d.rs) and [Fluid3D](src/fluids/fluid_3d.rs). These nodes can set and get position, velocity and acceleration of particles used for fluid simulation. Internally it uses [salva](https://github.com/dimforge/salva) to create them.
 
 ## How to build
 

@@ -1,6 +1,6 @@
 # Architecture
 
-The Godot Rapier data is organized in two layers:
+The SadSha Rapier Physics data is organized in two layers:
 - Godot Data Layer: This maps to what Godot sends to the plugin.
 - Rapier Data Layer: This is data converted from Godot to match Rapier Lib data.
 
